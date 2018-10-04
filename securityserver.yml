@@ -4,7 +4,7 @@ server:
 eureka:
   instance:
     hostname: localhost
-    port: 9091
+    port: 8010
   client:
     registerWithEureka: true
     fetchRegistry: false
@@ -30,7 +30,7 @@ spring:
         password: 'root'
         platform: mysql
         schema: classpath:/sql/schema.sql
-        url: jdbc:mysql://localhost/oauth?verifyServerCertificate=false&useSSL=false&requireSSL=false
+        url: jdbc:mysql://localhost/oauth?verifyServerCertificate=false&useSSL=false&requireSSL=false&createDatabaseIfNotExist=true
         username: root
     jpa:
         database-platform: org.hibernate.dialect.MySQLDialect
